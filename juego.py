@@ -224,7 +224,7 @@ def player(numero, conn, game):
                     game.moveLeft(numero)
                     game.faceLeft(numero)
                 elif "collideveneno" in command:
-                    i = int(command[16]) 
+                    i = int(command[13]) 
                     game.veneno_collide(i,numero)
                     game.vidas[numero] -=1   
                 elif "collideflor" in command: 
